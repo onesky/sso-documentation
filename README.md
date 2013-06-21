@@ -1,5 +1,5 @@
 # OneSky SSO
-Allow your users to login directly.
+Allow your users to login directly. You need to enable Single Sign On in OneSky dashboard first.
 
 ***
 
