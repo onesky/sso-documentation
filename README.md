@@ -1,5 +1,5 @@
 # OneSky SSO
-Allow your users to login directly. You need to enable Single Sign On in OneSky dashboard first.
+SSO allows your users to login through your own authentication system. You need to enable Single Sign On in OneSky dashboard first.
 
 ***
 
@@ -11,10 +11,10 @@ Instruction: http://developer.oneskyapp.com/api/#/sso/get-link
 # Generate SSO Data yourself
 
 ## Parameters
-- **time** _(required)_ — Current [Unix timestamp (UTC)](http://en.wikipedia.org/wiki/Unix_time) in integer form. To validate if the request has been expired.
-- **id** _(required)_ — The unique Id of the user in your application. Can be any type. We recommend using the email.
-- **name** _(required)_ - The name of your user. To be displayed in OneSky. Free-style.
-- **data** _(required)_ - The sso data to ensure your request is valid.
+- **time** _(required)_ — Current [Unix timestamp (UTC)](http://en.wikipedia.org/wiki/Unix_time) in integer form. For checking whether the request has expired.
+- **id** _(required)_ — The unique ID of the user in your application. Can be of any type. We recommend using email address.
+- **name** _(required)_ - The name of your user to be displayed in OneSky. Free-style.
+- **data** _(required)_ - The SSO data to ensure your request is valid.
 
 ## Generating data
 ```code
