@@ -24,3 +24,11 @@ data = MD5( CONCATENATE( YOUR_SSO_SALT, time, id ) );
 ## Example
 
     https://translate.oneskyapp.com?data=SSO_DATA&id=name@email.com&time=1300000000&name=Peter
+
+## Sample usage
+
+1. Create a link in your site.
+    ```
+	<a href="/help-me-translate">Help translate</a>.
+	```
+2. Use your own user sessison to generate the SSO link and redirect the user to the generated link.
