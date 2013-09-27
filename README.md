@@ -20,7 +20,7 @@ Instruction: http://developer.oneskyapp.com/api/#/sso/get-link
 
 ## Generating data
 ```code
-data = MD5( CONCATENATE( YOUR_SSO_SALT, time, id, locale, project ) );
+data = MD5( CONCATENATE( YOUR_SSO_SALT, time, id, project, locale ) ); // Beware of the order of strings
 ```
 
 ## Example
