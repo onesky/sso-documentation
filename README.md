@@ -14,9 +14,9 @@ Instruction: http://developer.oneskyapp.com/api/#/sso/get-link
 - **time** _(required)_ — Current [Unix timestamp (UTC)](http://en.wikipedia.org/wiki/Unix_time) in integer form. For checking whether the request has expired.
 - **id** _(required)_ — The unique ID of the user in your application. Can be of any type. We recommend using email address.
 - **name** _(required)_ - The name of your user to be displayed in OneSky. Free-style.
+- **data** _(required)_ - The SSO data to ensure your request is valid.
 - **locale** _(optional)_ - The locale you want to be accessible by this user.
 - **project** _(optional) (requires **locale**)_ - Project IDs you want to be accessible by this user. Comma separated. If it is not specified, we will add this user as a collaborator to all your projects containing the specified locale.
-- **data** _(required)_ - The SSO data to ensure your request is valid.
 
 ## Generating data
 ```code
