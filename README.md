@@ -15,17 +15,17 @@ Instruction: http://developer.oneskyapp.com/api/#/sso/get-link
 - **id** _(required)_ — The unique ID of the user in your application. Can be of any type. We recommend using email address.
 - **name** _(required)_ - The name of your user to be displayed in OneSky. Free-style.
 - **locale** _(optional)_ - The locale you want to be accessible by this user.
-- **project** _(optional) (requires **locale**)_ - Project IDs you want to be accessible by this user. Comma separated.
+- **project** _(optional) (requires **locale**)_ - Project IDs you want to be accessible by this user. Comma separated. If it is not specified, we will add this user as a collaborator to all your projects containing the specified locale.
 - **data** _(required)_ - The SSO data to ensure your request is valid.
 
 ## Generating data
 ```code
-data = MD5( CONCATENATE( YOUR_SSO_SALT, time, id, project, locale ) );
+data = MD5( CONCATENATE( YOUR_SSO_SALT, time, id, locale, project ) );
 ```
 
 ## Example
 
-    https://translate.oneskyapp.com?data=SSO_DATA&id=name@email.com&time=1300000000&name=Peter
+    https://translate.oneskyapp.com?data=SSO_DATA&id=name@email.com&time=1300000000&name=Peter&locale=fr_FR&project=1,2,3
 
 ## Sample usage
 
