@@ -1,5 +1,5 @@
 # OneSky SSO
-SSO allows your users to login through your own authentication system. You need to enable Single Sign On in OneSky dashboard first.
+SSO allows your users to login through your own authentication system. You need to [enable Single Sign On](https://support.oneskyapp.com/hc/en-us/articles/206229118-How-to-enable-Single-Sign-On-SSO-) in OneSky dashboard first.
 
 ***
 
