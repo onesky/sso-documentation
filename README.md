@@ -33,4 +33,4 @@ data = MD5( CONCATENATE( YOUR_SSO_SALT, time, id, project, locale ) ); // Beware
     ```
 	<a href="/help-me-translate">Help translate</a>.
 	```
-2. Use your own user sessison to generate the SSO link and redirect the user to the generated link.
+2. Use your own user session to generate the SSO link and redirect the user to the generated link.
